@@ -1,9 +1,6 @@
 #include "stdafx.h"
 #include "klasy.h"
 
-
-
-
 Player::Player()
 {
 	for (int i = 0; i < 30; i++){
@@ -21,12 +18,9 @@ Player::~Player()
 {
 }
 
-Item::Item(){
-}
+Item::Item(){}
 
-Item::~Item(){
-
-}
+Item::~Item(){}
 
 Enemy::Enemy(int id){
 	hp = 300 + id * 20;
@@ -41,11 +35,7 @@ Potion::Potion(){
 }
 
 Potion::~Potion(){
-
 }
-
-
-
 Board::Board(){
 
 }
