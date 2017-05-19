@@ -3,20 +3,13 @@
 #include "funkcje.h"
 #include <iomanip>
 #include <conio.h>
-#include <windows.h>
 
 using namespace std;
-
-
-
 
 int main(int argc, char *argv[]){
 	Board map;
 	Player player;
 	char key;
-	
-	
-
 	
 		createMap(&map, &player);//tu tworzymy i umieszczamy wszystkie rzeczy na mapie
 		
@@ -28,7 +21,7 @@ int main(int argc, char *argv[]){
 		do{
 			system("CLS"); // 
 			showMap(map);
-			showStats(player);// pokazuje lvl, hp, si≥e
+			showStats(player);// pokazuje lvl, hp, si≈Çe
 			key = _getch(); 
 			player.calculate();
 			keyEvent(key, &player, &map); // wszystkie zdarzenia
@@ -38,12 +31,7 @@ int main(int argc, char *argv[]){
 				cout << "GAME OVER";
 			}
 		} while (key != 'z');  // zamykanie gry
-
-
-
 	cout << endl << endl << endl;
-
-	
 	system("PAUSE");
 	return 0;
 }
