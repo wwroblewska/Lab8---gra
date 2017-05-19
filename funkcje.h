@@ -1,4 +1,3 @@
-
 #include "klasy.h"
 #include "cstdlib"
 #include <iostream>
