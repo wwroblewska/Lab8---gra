@@ -1,6 +1,5 @@
-#pragma once
-#include "klasy.h"
 
+#include "klasy.h"
 #include "cstdlib"
 #include <iostream>
 #include <string>
